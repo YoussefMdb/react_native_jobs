@@ -14,7 +14,7 @@ const Layout = () => {
 
   const onLayoutRootView = useCallback(async () => {
     if (fontsLoaded) {
-      await SplashScreen.hideAsync();
+      await SplashScreen.loadAsync();
     }
   }, [fontsLoaded]);
 
